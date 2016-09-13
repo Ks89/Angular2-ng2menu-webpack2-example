@@ -1,9 +1,4 @@
-# Angular2 angular2-ladda + Webpack 2 Example
-
-
-A small example of how to use angualar2-ladda with webpack 2
-
-BROKEN!!!!
+# Angular2 ng2admin webpack2 Example
 
 
 ##How to use it
