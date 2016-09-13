@@ -1,9 +1,3 @@
-<div class="container">
-  <div class="row">
-
-    <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+<main [ngClass]="{'menu-collapsed': isMenuCollapsed}">
       <router-outlet></router-outlet>
-    </div>
-
-  </div>
-</div>
+    </main>
