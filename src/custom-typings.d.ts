@@ -44,6 +44,12 @@ declare var AmCharts:any;
 declare var Chart:any;
 declare var Chartist:any;
 
+// Webpack
+declare function require(path: string);
+declare const webpack: {
+  ENV: string
+};
+
 // support NodeJS modules without type definitions
 declare module '*';
 
@@ -110,6 +116,7 @@ interface WebpackRequire {
 interface WebpackContext extends WebpackRequire {
   keys(): string[];
 }
+
 
 interface ErrorStackTraceLimit {
   stackTraceLimit: number;

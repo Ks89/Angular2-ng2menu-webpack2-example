@@ -1,5 +1,3 @@
-
-// import 'core-js/es6';
 // Added parts of es6 which are necessary for your project or your browser support requirements.
 import 'core-js/es6/symbol';
 import 'core-js/es6/object';
@@ -18,9 +16,6 @@ import 'core-js/es6/weak-map';
 import 'core-js/es6/weak-set';
 import 'core-js/es6/typed';
 import 'core-js/es6/reflect';
-// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
-// import 'core-js/es6/promise';
-
 import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
 
@@ -35,15 +30,10 @@ import '@angular/forms';
 import '@angular/http';
 import '@angular/router';
 
-// AngularClass
-import '@angularclass/hmr';
-
 // RxJS
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 
 // Web dependencies
 import 'jquery';
-// import 'bootstrap-loader';
-// import 'font-awesome-sass-loader';
 import 'lodash';

@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { GlobalState } from '../common/services/global.state';
 
 @Component({
-  selector: 'app',
+  selector: 'my-application',
   encapsulation: ViewEncapsulation.None,
   styles: [],
   template: require('./application.html'),
