@@ -21,15 +21,6 @@ export class BaThemeConfigProvider {
     danger: '#f95372',
   };
 
-  // dashboard colors for charts
-  dashboardColors = {
-    blueStone: '#40daf1',
-    surfieGreen: '#00abff',
-    silverTree: '#1b70ef',
-    gossip: '#3c4eb9',
-    white: '#ffffff',
-  };
-
   conf = {
     theme: {
       name: 'ng2',
@@ -57,19 +48,6 @@ export class BaThemeConfigProvider {
       successDark: colorHelper.shade(this.colorScheme.success, 15),
       warningDark: colorHelper.shade(this.colorScheme.warning, 15),
       dangerDark: colorHelper.shade(this.colorScheme.danger, 15),
-
-      dashboard: {
-        blueStone: this.dashboardColors.blueStone,
-        surfieGreen: this.dashboardColors.surfieGreen,
-        silverTree: this.dashboardColors.silverTree,
-        gossip: this.dashboardColors.gossip,
-        white: this.dashboardColors.white,
-      },
-
-      custom: {
-        dashboardLineChart: this.basic.defaultText,
-        dashboardPieChart: colorHelper.hexToRgbA(this.basic.defaultText, 0.8)
-      }
     }
   };
 
