@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
 import { GlobalState } from './common/services/global.state';
 import { NgaModule } from './theme/nga.module';
 
-
 @NgModule({
   imports: [ // import Angular's modules
     BrowserModule,

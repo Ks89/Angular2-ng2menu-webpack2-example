@@ -8,9 +8,8 @@ import { PAGES_MENU } from '../../../pages/pages.menu';
 @Component({
   selector: 'ba-sidebar',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./baSidebar.scss')],
-  template: require('./baSidebar.html'),
-  directives: [BaMenu]
+  styleUrls: ['baSidebar.scss'],
+  templateUrl: 'baSidebar.html',
 })
 export class BaSidebar {
 

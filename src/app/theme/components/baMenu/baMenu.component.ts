@@ -10,10 +10,8 @@ import {GlobalState} from '../../../common/services/global.state';
 @Component({
   selector: 'ba-menu',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./baMenu.scss')],
-  template: require('./baMenu.html'),
-  providers: [BaMenuService],
-  directives: [BaMenuItem, BaSlimScroll]
+  styleUrls: ['baMenu.scss'],
+  templateUrl: 'baMenu.html'
 })
 export class BaMenu {
 

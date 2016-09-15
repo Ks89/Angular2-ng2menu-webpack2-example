@@ -3,10 +3,8 @@ import {Component, ViewEncapsulation, Input, Output, EventEmitter} from '@angula
 @Component({
   selector: 'ba-menu-item',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./baMenuItem.scss')],
-  template: require('./baMenuItem.html'),
-  providers: [],
-  directives: [BaMenuItem]
+  styleUrls: ['baMenuItem.scss'],
+  templateUrl: 'baMenuItem.html',
 })
 export class BaMenuItem {
 
