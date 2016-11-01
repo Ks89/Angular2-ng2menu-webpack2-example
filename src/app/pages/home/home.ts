@@ -8,10 +8,4 @@ import {ViewEncapsulation} from '@angular/core';
   templateUrl: 'home.html'
 })
 export default class HomeComponent {
-  //trigger-variable for Ladda
-   isLoading: boolean = false;
-
-   toggleLoading() {
-       this.isLoading = !this.isLoading;
-   }
 }

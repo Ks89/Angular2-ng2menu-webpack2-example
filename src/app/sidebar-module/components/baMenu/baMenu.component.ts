@@ -2,10 +2,9 @@ import {Component, ViewEncapsulation, Input, Output, EventEmitter} from '@angula
 import {Router, Routes, NavigationEnd} from '@angular/router';
 import {Subscription} from 'rxjs/Rx';
 
-import {BaSlimScroll} from '../../../theme/directives';
+// import {BaSlimScroll} from '../../../theme/directives';
 import {BaMenuService} from './baMenu.service';
 import {BaMenuItem} from './components/baMenuItem';
-import {GlobalState} from '../../../common/services/global.state';
 
 @Component({
   selector: 'ba-menu',
@@ -28,7 +27,7 @@ export class BaMenu {
   protected _onRouteChange:Subscription;
   public outOfArea:number = -200;
 
-  constructor(private _router:Router, private _service:BaMenuService, private _state:GlobalState) {
+  constructor(private _router:Router, private _service:BaMenuService) {
     this._onRouteChange = this._router.events.subscribe((event) => {
 
       if (event instanceof NavigationEnd) {
@@ -45,7 +44,6 @@ export class BaMenu {
   public selectMenuAndNotify():void {
     if (this.menuItems) {
       this.menuItems = this._service.selectMenuItem(this.menuItems);
-      this._state.notifyDataChanged('menu.activeLink', this._service.getCurrentItem());
     }
   }
 

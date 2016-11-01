@@ -1,9 +1,8 @@
 import {Component, ElementRef, HostListener, ViewEncapsulation} from '@angular/core';
-import {GlobalState} from '../../../common/services/global.state'; //RESPONSIVE
 import {BaMenu} from '../baMenu';
 import * as _ from 'lodash';
 
-import { PAGES_MENU } from '../../../pages/pages.menu';
+import { PAGES_MENU } from './pages.menu';
 
 @Component({
   selector: 'ba-sidebar',
@@ -21,16 +20,13 @@ export class BaSidebar {
   // here we declare which routes we want to use as a menu in our sidebar
   public routes = _.cloneDeep(PAGES_MENU); // we're creating a deep copy since we are going to change that object
 
+
   public menuHeight:number;
   public isMenuCollapsed:boolean = false;
   public isMenuShouldCollapsed:boolean = false;
 
 
-  constructor(private _elementRef:ElementRef, private _state:GlobalState) {
-
-    this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
-      this.isMenuCollapsed = isCollapsed;
-    });
+  constructor(private _elementRef:ElementRef) {
   }
 
   public ngOnInit():void {
@@ -65,7 +61,6 @@ export class BaSidebar {
 
   public menuCollapseStateChange(isCollapsed:boolean):void {
     this.isMenuCollapsed = isCollapsed;
-    this._state.notifyDataChanged('menu.isCollapsed', this.isMenuCollapsed);
   }
 
   public updateSidebarHeight():void {
