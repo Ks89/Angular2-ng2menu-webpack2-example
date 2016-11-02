@@ -1,4 +1,71 @@
-@import '../../sass/conf/conf';
+// @import '../../sass/conf/conf';
+$font-family: 'Roboto', sans-serif;
+
+$resXXL: 1280px;
+$resXL: 1170px;
+$resL: 991px;
+$resM: 768px;
+$resS: 660px;
+$resXS: 500px;
+$resXXS: 435px;
+$resMin: 320px;
+
+// $resXXL: 1280px;
+// $resXL: 1170px;
+// $resL: 991px;
+// $resM: 768px;
+// $resS: 660px;
+// $resXS: 500px;
+// $resXXS: 435px;
+// $resMin: 320px;
+
+$top-height: 66px;
+
+$default-animation-duration: 0.2s;
+$default-animation-style: ease-out;
+
+$font-thin: 100;
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$font-bolder: 500;
+$font-ultraBold: 900;
+
+// sidebar colors
+$sidebar: #072d4e;
+$sidebar-text: #ffffff;
+
+// color scheme
+$primary: #00abff !default;
+$info: #40daf1 !default;
+$success: #8bd22f !default;
+$warning: #e7ba08 !default;
+$danger: #f95372 !default;
+
+$primary-light: tint($primary, 30%);
+$info-light: tint($info, 30%);
+$success-light: tint($success, 30%);
+$warning-light: tint($warning, 30%);
+$danger-light: tint($danger, 30%);
+
+$primary-dark: shade($primary, 15%);
+$info-dark: shade($info, 15%);
+$success-dark: shade($success, 15%);
+$warning-dark: shade($warning, 15%);
+$danger-dark: shade($danger, 15%);
+
+$primary-bg: tint($primary, 20%);
+$info-bg: tint($info, 20%);
+$success-bg: tint($success, 20%);
+$warning-bg: tint($warning, 20%);
+$danger-bg: tint($danger, 20%);
+
+
+
+@mixin bg-translucent-dark($opacity) {
+  background: rgba(0, 0, 0, $opacity);
+}
+
 
 $sidebar-width: 180px;
 $angle-left: "\f100";

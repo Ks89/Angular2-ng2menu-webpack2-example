@@ -3,7 +3,6 @@ import {Component, ViewEncapsulation, Input, Output, EventEmitter} from '@angula
 @Component({
   selector: 'ba-menu-item',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: ['baMenuItem.scss'],
   templateUrl: 'baMenuItem.html',
 })
 export class BaMenuItem {

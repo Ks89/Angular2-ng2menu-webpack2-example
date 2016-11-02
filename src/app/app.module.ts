@@ -1,6 +1,6 @@
 import ApplicationComponent from './application/application';
 import HomeComponent from './pages/home/home';
-import { SidebarModule } from './sidebar-module/nga.module';
+import { SidebarModule } from './sidebar-module/sidebar.module';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';

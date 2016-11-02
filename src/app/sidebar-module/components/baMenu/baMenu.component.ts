@@ -2,14 +2,12 @@ import {Component, ViewEncapsulation, Input, Output, EventEmitter} from '@angula
 import {Router, Routes, NavigationEnd} from '@angular/router';
 import {Subscription} from 'rxjs/Rx';
 
-// import {BaSlimScroll} from '../../../theme/directives';
 import {BaMenuService} from './baMenu.service';
 import {BaMenuItem} from './components/baMenuItem';
 
 @Component({
   selector: 'ba-menu',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: ['baMenu.scss'],
   templateUrl: 'baMenu.html'
 })
 export class BaMenu {
